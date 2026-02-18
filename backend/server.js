@@ -14,13 +14,7 @@ app.use(express.json());
 // MongoDB Connection
 const mongoUri = "mongodb://localhost:27017/ctf-website";
 
-mongoose.connect(mongoUri)
-  .then(() => {
-    console.log('✅ Connected to MongoDB!');
-  })
-  .catch((err) => {
-    console.log('❌ MongoDB connection error:', err.message);
-  });
+mongoose.connect("mongodb+srv://ctfuser:ctf123456@cluster0.6q6vo2s.mongodb.net/?appName=Cluster0")
 
 // Import routes
 const authRoutes = require('./authRoutes');
