@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #333;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+}
+
+.dashboard-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+  font-size: 32px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info p {
+  font-size: 16px;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: white;
+  color: #667eea;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.dashboard-content {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.challenges-section h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.challenge-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  border-left: 5px solid #667eea;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.challenge-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.challenge-card p {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.easy {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.medium {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.hard {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.solve-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+
+.solve-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
+}
